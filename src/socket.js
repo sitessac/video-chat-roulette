@@ -1,7 +1,7 @@
 const io = require('socket.io-client');
 
 export default function () {
-  const port = process.env.NODE_ENV==='development' ? 'http://localhost:8080' : '';
+  const port = process.env.NODE_ENV==='development' ? 'http://191.252.223.139:7070' : '';
   const socket = io.connect(port);
 
   socket.on('error', err => console.log('socket error:', err));
